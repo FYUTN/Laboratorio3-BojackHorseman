@@ -1,0 +1,582 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Preahvihear', sans-serif;
+		background-color: #e0d29f;
+}
+header{
+	padding-top: 1%;
+	padding-right: 9%;
+	padding-bottom: 1%;
+	padding-left: 9%;
+	display: flex;
+	justify-content: space-between;
+  background-color: #B8860B;
+}
+/*menú principal */
+nav ul {
+    margin-top: 7%;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; 
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+    display: block; 
+    color: #000000;
+    text-decoration: none; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    font-weight: 800;
+    background-color: #d4be91;
+    border-radius: 10px;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    margin-top: 1%;
+    background-color: #fff; 
+    border: 2px solid #ccc; 
+    border-top: none; 
+    border-radius: 0 0 15px 15px;
+
+}
+
+
+.sub-menu li a {
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.sub-menu li a:hover {
+    background-color: #E5BE01;
+    color: #fff;
+    display: block;
+    border-radius: 0 0 15px 15px;
+}
+
+nav ul li:hover .sub-menu {
+    display: block;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+.icon { display: none; }
+section{
+	max-width: 1300px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #B8860B;
+}
+
+article {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #704214; 
+}
+
+p {
+  font-size: 1.2rem;
+  color: #333; 
+  line-height: 1.5;
+}
+
+button {
+  background-color: #704214;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block;
+  margin: 0 auto;
+}
+
+button:hover {
+  background-color: #946239; 
+}
+
+.principal{
+	width: 100%;
+	height: 650px;
+	background-image: url(../images/bjprincipal.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.principal div img{
+	width: 70%;
+}
+/*galería */
+.secundario {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #eee0a2;
+
+}
+
+
+.secundario div {
+  width: 33% ; 
+  margin-bottom: 1rem;
+  margin-right: 0.1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px #00000030;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.secundario div a img {
+  width: 100%;
+  transition: transform 0.2s;
+}
+
+.secundario div:hover a img {
+  transform: scale(1.05);
+}
+
+.secundario div a:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+section article div p a{
+	color: #E5BE01;
+	display:block;
+}
+
+p{
+	margin-top: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	font-size: 1.7rem;
+}
+h1{
+  text-align: center;
+}
+h2{
+	margin-top: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 2rem;
+}
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 350px;
+}
+footer img{
+	max-width: 2.5rem;
+	width: 100%;
+	height: auto;
+	margin-right: .5%;
+}
+
+
+.personajes {
+  display: flex;
+  flex-wrap: wrap; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.personajes article {
+  flex: 0 0 calc(50% - 20px);
+  margin: 5px;
+  max-width: calc(50% - 20px); /
+  box-sizing: border-box; 
+}
+
+.personajes img {
+  display: inline;
+  width: 150px;
+  height: auto;
+  margin-left: 15%;
+
+}
+
+.personajes article h2 {
+  margin-top: 0;
+  background-color: #E5BE01;
+  padding: 20px;
+}
+
+.personajes p {
+  display: inline-flex;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+}
+/*Reseña*/
+.fondorese{
+    background-image: url(../images/rese.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+
+
+}
+
+.artrese{
+  background-color: rgba(0, 0, 0, 0.85);
+
+}
+
+.artrese div p{
+color: #cc9900;
+}
+
+.CT{
+    background-image: url(../images/F.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-attachment: fixed;
+}
+.contac h1{
+  text-align: left;
+}
+form {
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #1E1E1E;
+  background-color: #6B0B86;
+}
+section div form h2{
+  color: #FFD700;
+
+}
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  width: 100%;
+  background-color: #E5BE02;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #FFD700; 
+}
+
+
+
+@media (max-width: 480px) { 
+header{
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #ffffff;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+  background-color: #B8860B;
+}
+header div, header a {
+	flex: 1 0 50%;
+}
+header nav {
+	flex-basis: 100%;
+}
+.icon {
+	display: block;
+	padding-right: 0.9rem;
+	text-align: right;
+}
+nav ul {
+	display: none;
+}
+nav.responsive ul {
+	display: block;
+}
+nav.responsive ul li {
+	display: block;
+	text-align: center;
+	padding: 0.5rem;
+}
+nav.responsive ul li a {
+	padding-right: 0;
+}
+section{
+	max-width: 480px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.principal{
+	height: 250px;
+	padding: 10%;
+}
+.secundario{
+	margin-top: 1%;
+	display: block;
+}
+.secundario div{
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.secundario div a img{
+	margin-bottom: 1rem;
+}
+
+h1{
+  font-size: 1.5rem; /* Tamaño de fuente más pequeño para h1 */
+}
+  
+h2{
+  font-size: 1rem; /* Tamaño de fuente más pequeño para h2 */
+}
+  
+p{
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño para párrafos */
+}
+  
+button{
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño para botones */
+}
+
+footer{
+	height: 80px;
+	justify-content: space-evenly;
+}
+footer img{
+	max-width: 3rem;
+}
+.personajes {
+    display: block; /* Cambiar a un diseño de bloques para dispositivos móviles */
+  }
+
+  .personajes article {
+    margin: 10px 0;
+    max-width: 100%; /* Ocupar todo el ancho disponible en dispositivos móviles */
+    box-sizing: border-box;
+  }
+
+  .personajes img {
+    display: block; /* Hacer que las imágenes ocupen todo el ancho disponible */
+    width: 100%;
+    height: auto;
+    margin-left: 0; /* Centrar la imagen */
+  }
+
+  .personajes article h2 {
+    margin-top: 10px; /* Espacio adicional en la parte superior */
+    background-color: #E5BE01;
+    padding: 10px;
+    text-align: center; /* Centrar el texto */
+  }
+
+  .personajes p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center; /* Centrar el texto */
+  }
+  .secundario {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar elementos en dispositivos móviles */
+    background-color: #eee0a2;
+  }
+
+  .secundario div {
+    width: 100%; /* Ocupar todo el ancho disponible en dispositivos móviles */
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px #00000030;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .secundario div a img {
+    width: 100%;
+    transition: transform 0.2s;
+  }
+
+  .secundario div:hover a img {
+    transform: scale(1.05);
+  }
+
+  .secundario div a:active {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Estilos para el lightbox en dispositivos móviles */
+  .lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; /* Asegura que el lightbox esté en la parte superior */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .artrese div {
+    padding: 1rem; /* Reduce el espacio interno */
+    margin-bottom: 1rem; /* Ajusta el margen inferior */
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .artrese div p {
+    color: #cc9900;
+    font-size: 1rem; /* Ajusta el tamaño de fuente del texto */
+    line-height: 1.4; /* Ajusta el espacio entre líneas */
+  }
+  
+  .fondorese {
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro para la imagen */
+    padding: 1rem; /* Añade espacio alrededor de la imagen */
+  }
+
+  .fondorese::before {
+    content: '';
+    background-image: url(../images/rese.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px; /* Ajusta la altura de la imagen */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7; /* Ajusta la opacidad de la imagen de fondo */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+  }
+  
+  .fondorese h1 {
+    color: #E5BE01; /* Color del título */
+    font-size: 1.5rem; /* Ajusta el tamaño de fuente del título */
+    margin-bottom: 1rem; /* Ajusta el margen inferior del título */
+  }
+  
+  .fondorese p {
+    color: #f4f4f4; /* Color del texto */
+    font-size: 1rem; /* Ajusta el tamaño de fuente del texto */
+    line-height: 1.4; /* Ajusta el espacio entre líneas */
+  }
+   .contac h1 {
+    text-align: center; /* Ajusta el alineamiento del título */
+  }
+
+  form {
+    max-width: 90%; /* Ajusta el ancho del formulario */
+    padding: 1rem; /* Reduce el espacio interno del formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #1E1E1E;
+    background-color: #6B0B86;
+  }
+
+  section div form h2 {
+    color: #FFD700;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  button {
+    width: 100%;
+    background-color: #E5BE02;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ajusta el botón como bloque para ocupar el ancho completo */
+    margin-top: 10px; /* Añade espacio encima del botón */
+  }
+
+  button:hover {
+    background-color: #FFD700;
+  }
+  .sub-menu {
+  display: none !important;
+}
+}
